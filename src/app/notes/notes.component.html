@@ -6,3 +6,9 @@
 <hr />
 <input type="button" *ngIf="action === 'new'" value="Guardar">
 <input type="button" *ngIf="action === 'edit'" value="Editar">
+<hr />
+<ul>
+    <li *ngFor="let nota of notas">
+        <b>{{nota.titulo}}</b> {{nota.descripcion}}
+    </li>
+</ul>
