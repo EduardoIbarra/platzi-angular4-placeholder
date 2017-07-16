@@ -1,2 +1,5 @@
 <h1>{{title}}</h1>
 <input type="button" value="Hacer Algo" [disabled]="!notasListas" (click)="hazAlgo()"/>
+<br />
+<label>Título de esta página:</label>
+<input type="text" [(ngModel)]="title" />
