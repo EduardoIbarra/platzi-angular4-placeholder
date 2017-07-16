@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class NotesComponent {
     title = 'Notes Component';
     notasListas = false;
+    action = 'new';
     constructor(){
         setTimeout(()=>{
             this.notasListas = true;

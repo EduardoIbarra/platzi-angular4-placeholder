@@ -3,3 +3,6 @@
 <br />
 <label>Título de esta página:</label>
 <input type="text" [(ngModel)]="title" />
+<hr />
+<input type="button" *ngIf="action === 'new'" value="Guardar">
+<input type="button" *ngIf="action === 'edit'" value="Editar">
