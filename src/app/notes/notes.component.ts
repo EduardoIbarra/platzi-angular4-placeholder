@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './notes.component.html'
 })
 export class NotesComponent {
+    title = 'Notes Component';
 }
