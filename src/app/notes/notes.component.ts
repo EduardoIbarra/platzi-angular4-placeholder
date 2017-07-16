@@ -12,4 +12,7 @@ export class NotesComponent {
             this.notasListas = true;
         }, 3000);
     }
+    hazAlgo(){
+        this.title = 'Haciendo Algo!';
+    }
 }
