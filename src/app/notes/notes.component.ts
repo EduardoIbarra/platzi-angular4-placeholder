@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 export class NotesComponent {
     title = 'Notes Component';
+    notasListas = false;
+    constructor(){
+        setTimeout(()=>{
+            this.notasListas = true;
+        }, 3000);
+    }
 }
