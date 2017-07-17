@@ -8,6 +8,7 @@ export class NotesComponent {
     title = 'Notes Component';
     notasListas = false;
     action = 'new';
+    response = 200;
     notas = [
         {titulo:'Nota 1', descripcion:"Descripcioón de la Nota 1"},
         {titulo:'Nota 2', descripcion:"Descripcioón de la Nota 2"},

@@ -18,3 +18,10 @@
         <b>{{nota.titulo}}</b> {{nota.descripcion}}
     </li>
 </ul>
+<hr />
+<div [ngSwitch]="response">
+    <div *ngSwitchCase="200">Todo Perfecto!</div>
+    <div *ngSwitchCase="199">Cuidado...</div>
+    <div *ngSwitchCase="500">Algo está mal!</div>
+    <div *ngSwitchDefault>No sabemos qué pasa!</div>
+</div>
