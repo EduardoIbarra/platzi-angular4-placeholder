@@ -8,7 +8,7 @@
 <input type="button" *ngIf="action === 'edit'" value="Editar">
 <hr />
 <ul>
-    <li *ngFor="let nota of notas">
+    <li *ngFor="let nota of notas; let i = index" [ngClass]="{non: (i+1) % 2 !== 0}">
         <b>{{nota.titulo}}</b> {{nota.descripcion}}
     </li>
 </ul>
