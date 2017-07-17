@@ -12,3 +12,9 @@
         <b>{{nota.titulo}}</b> {{nota.descripcion}}
     </li>
 </ul>
+<hr />
+<ul>
+    <li *ngFor="let nota of notas; let i = index" [ngStyle]="{backgroundColor: (i+1) % 2 !== 0 ? 'darkslategray' : 'transparent'}">
+        <b>{{nota.titulo}}</b> {{nota.descripcion}}
+    </li>
+</ul>
