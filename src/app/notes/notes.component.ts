@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ContarClicksDirective} from "../directives/contar-clicks.directive";
 
 @Component({
     selector: 'notes-component',
