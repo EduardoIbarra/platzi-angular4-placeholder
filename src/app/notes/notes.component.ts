@@ -1,11 +1,27 @@
 import { Component } from '@angular/core';
 import {ContarClicksDirective} from "../directives/contar-clicks.directive";
+import {trigger, state, style} from "@angular/animations";
 
 @Component({
     selector: 'notes-component',
-    templateUrl: './notes.component.html'
+    templateUrl: './notes.component.html',
+    animations: [
+        trigger('contenedorAnimable', [
+            state('inicial', style({
+                opacity: 0,
+                backgroundColor: 'green',
+                transform: 'rotate3d(0,0,0,0deg)'
+            })),
+            state('final', style({
+                opacity: 1,
+                backgroundColor: 'yellow',
+                transform: 'rotate3d(0,0,0,180deg)'
+            }))
+        ])
+    ]
 })
 export class NotesComponent {
+    state = 'inicial';
     title = 'Notes Component';
     notasListas = false;
     action = 'new';
