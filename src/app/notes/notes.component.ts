@@ -23,4 +23,9 @@ export class NotesComponent {
     hazAlgo(){
         this.title = 'Haciendo Algo!';
     }
+    foods = [
+        {value: 'steak-0', viewValue: 'Steak'},
+        {value: 'pizza-1', viewValue: 'Pizza'},
+        {value: 'tacos-2', viewValue: 'Tacos'}
+    ];
 }

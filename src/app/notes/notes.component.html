@@ -1,4 +1,14 @@
 <h1>{{title}}</h1>
+<md-checkbox>Check me!</md-checkbox><br />
+<md-input-container>
+    <input mdInput placeholder="Favorite food" value="Sushi">
+</md-input-container><br />
+<md-select placeholder="Favorite food">
+    <md-option *ngFor="let food of foods" [value]="food.value">
+        {{ food.viewValue }}
+    </md-option>
+</md-select>
+<hr />
 <a contar-clicks>Contar</a>
 <hr />
 <input type="button" value="Hacer Algo" [disabled]="!notasListas" (click)="hazAlgo()"/>

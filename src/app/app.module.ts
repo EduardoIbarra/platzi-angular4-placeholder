@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import {NotesComponent} from "./notes/notes.component";
 import {FormsModule} from "@angular/forms";
 import {ContarClicksDirective} from "./directives/contar-clicks.directive";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from "@angular/material";
 
 @NgModule({
     declarations: [
@@ -14,7 +16,9 @@ import {ContarClicksDirective} from "./directives/contar-clicks.directive";
     ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        BrowserAnimationsModule,
+        MaterialModule
     ],
     providers: [],
     bootstrap: [AppComponent]
