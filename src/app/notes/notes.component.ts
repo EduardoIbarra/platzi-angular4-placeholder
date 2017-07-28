@@ -41,6 +41,14 @@ export class NotesComponent {
     animar(){
         this.state = (this.state === 'inicial') ? 'final' : 'inicial';
     }
+    animacionComienza(e){
+        console.log(Date.now());
+        console.log(e);
+    }
+    animacionTermina(e){
+        console.log(Date.now());
+        console.log(e);
+    }
     hazAlgo(){
         this.title = 'Haciendo Algo!';
     }

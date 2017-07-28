@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
 <a (click)="animar()">Animar</a>
-<div id="cuadrado" [@contenedorAnimable]="state">
+<div id="cuadrado" [@contenedorAnimable]="state" (@contenedorAnimable.start)="animacionComienza($event)" (@contenedorAnimable.done)="animacionTermina($event)">
 </div>
 <hr />
 <md-checkbox>Check me!</md-checkbox><br />
