@@ -15,7 +15,7 @@ import {trigger, state, style} from "@angular/animations";
             state('final', style({
                 opacity: 1,
                 backgroundColor: 'yellow',
-                transform: 'rotate3d(0,0,0,180deg)'
+                transform: 'rotate3d(5,10,20,30deg)'
             }))
         ])
     ]
@@ -34,6 +34,7 @@ export class NotesComponent {
     constructor(){
         setTimeout(()=>{
             this.notasListas = true;
+            this.state = 'final';
         }, 3000);
     }
     hazAlgo(){
