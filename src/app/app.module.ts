@@ -18,7 +18,7 @@ import {MaterialModule} from "@angular/material";
         BrowserModule,
         FormsModule,
         BrowserAnimationsModule,
-        MaterialModule
+        MaterialModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
