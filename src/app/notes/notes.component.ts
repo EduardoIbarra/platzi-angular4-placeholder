@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ContarClicksDirective} from "../directives/contar-clicks.directive";
-import {trigger, state, style} from "@angular/animations";
+import {trigger, state, style, transition, animate} from "@angular/animations";
 
 @Component({
     selector: 'notes-component',
@@ -16,7 +16,9 @@ import {trigger, state, style} from "@angular/animations";
                 opacity: 1,
                 backgroundColor: 'yellow',
                 transform: 'rotate3d(5,10,20,30deg)'
-            }))
+            })),
+            transition('inicial => final', animate(1000)),
+            transition('final => inicial', animate(500)),
         ])
     ]
 })
@@ -34,8 +36,10 @@ export class NotesComponent {
     constructor(){
         setTimeout(()=>{
             this.notasListas = true;
-            this.state = 'final';
         }, 3000);
+    }
+    animar(){
+        this.state = (this.state === 'inicial') ? 'final' : 'inicial';
     }
     hazAlgo(){
         this.title = 'Haciendo Algo!';
